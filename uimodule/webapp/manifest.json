@@ -50,7 +50,9 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "com.zwork.dabin.i18n.i18n"
+          "bundleName": "com.zwork.dabin.i18n.i18n",
+          "supportedLocales": [""],
+          "fallbackLocale": ""
         }
       }
     },
@@ -72,17 +74,16 @@
       },
       "routes": [
         {
-          "name": "RouteMainView",
-          "pattern": "RouteMainView",
-          "target": ["TargetMainView"]
+          "pattern": "",          
+          "name": "Overview",
+          "target": "TargetOverview"
         }
       ],
       "targets": {
-        "TargetMainView": {
+        "TargetOverview": {
           "viewType": "XML",
-          "viewLevel": 1,
-          "viewId": "idAppControl",
-          "viewName": "MainView"
+          "viewId": "idOverview",
+          "viewName": "Overview"
         }
       }
     }
